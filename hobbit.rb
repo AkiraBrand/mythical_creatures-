@@ -20,6 +20,9 @@ class Hobbit
 
  def has_ring?
   @name == "Frodo"
+  # try removing the @ sign here. It'll still pass.
+  # try removing some other @ signs. what happens? 
+  # why do you think that is?
  end
 
  def is_short?
