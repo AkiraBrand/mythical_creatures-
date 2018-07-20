@@ -89,6 +89,21 @@ class HobbitTest < Minitest::Test
     shawty_hobbit = Hobbit.new('shorty')
     assert_equal "second breakfast", shawty_hobbit.elevenses
   end
+  
+  def test_the_hobbit_can_do_more_math
+    shawty_hobbit = Hobbit.new('shorty')
+    assert_equal 6, shawty_hobbit.add(2, 4)
+  end
+  
+  def test_the_hobbit_can_do_more_math
+    shawty_hobbit = Hobbit.new('shorty')
+    assert_equal 10, shawty_hobbit.add(10, 0)
+  end
+  
+  def test_the_hobbit_can_do_more_math
+    shawty_hobbit = Hobbit.new('shorty')
+    assert_equal 50, shawty_hobbit.add(49, 1)
+  end
 
 
 end
