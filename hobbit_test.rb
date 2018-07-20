@@ -77,14 +77,11 @@ class HobbitTest < Minitest::Test
 
   def test_hobbits_are_short
     shawty_hobbit = Hobbit.new('shorty')
-    # create a hobbit
-    # check that .is_short? returns true
     assert shawty_hobbit.is_short?
   end
-  
+
   def test_hobbit_knows_basic_math
-    shawty_hobbit = Hobbit.new('shorty')
-    
+    shawty_hobbit = Hobbit.new('shorty')    
     assert 4, shawty_hobbit.two_plus_two
   end
 
