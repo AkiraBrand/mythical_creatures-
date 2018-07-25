@@ -15,9 +15,7 @@ end
  end
 
  def say(saying)
-
-   puts "**;*"
-
+   p "**;* #{saying} **;*"
  end
 
 end
