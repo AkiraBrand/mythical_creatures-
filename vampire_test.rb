@@ -31,9 +31,9 @@ class VampireTest < Minitest::Test
     assert vampire.thirsty?
   end
 
-  def test_it_is_not_thirsty_after_drinking
+ def test_it_is_not_thirsty_after_drinking
     vampire = Vampire.new("Elizabeth Bathory")
     vampire.drink
     refute vampire.thirsty?
-  end
+ end
 end
