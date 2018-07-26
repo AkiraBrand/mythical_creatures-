@@ -1,4 +1,4 @@
- class Vampire
+class Vampire
  attr_reader :name,
              :pet
 
@@ -13,8 +13,8 @@
     true
    else
    false
-  end
-end
+   end
+ end
 
  def drink
    @drinks += 1
