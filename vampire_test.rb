@@ -40,6 +40,6 @@ class VampireTest < Minitest::Test
    
    vampire.blood_type("D")
    
-   assert_equal "D", vampire.blood_type
+   assert_equal "D", vampire.type
  end
 end
