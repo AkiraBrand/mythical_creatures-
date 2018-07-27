@@ -11,11 +11,8 @@ class Vampire
   def thirsty?
     return true if @drinks == 0
     false
-    # else
-    #   false
-    # end
   end
-  
+
   def drink
     @drinks += 1
   end
