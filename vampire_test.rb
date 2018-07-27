@@ -34,4 +34,12 @@ class VampireTest < Minitest::Test
     vampire.drink
     refute vampire.thirsty?
  end
+ 
+ def test_it_can_create_a_random_attribute
+   vampire = Vampire.new("Elizabeth Bathory")
+   
+   vampire.blood_type("D")
+   
+   assert_equal "D", vampire.blood_type
+ end
 end
