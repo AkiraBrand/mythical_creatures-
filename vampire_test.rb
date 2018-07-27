@@ -34,4 +34,11 @@ class VampireTest < Minitest::Test
     vampire.drink
     refute vampire.thirsty?
  end
+
+  def test_it_loves_a_mortal
+    vampire = Vampire.new("Edward")
+    vampire.love
+    assert_equal "Bella", vampire.love
+  end
+
 end
